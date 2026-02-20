@@ -47,7 +47,7 @@ gsap.timeline({
     y:200
 },0)
 const startValue = isMobile ? 'top 50%' : 'center 60%'
-const endValue = isMobile ? 'top 120%' : 'center top'
+const endValue = isMobile ? ' 120% top' : 'bottom top'
 
 const video = videoRef.current
 if (video) {
@@ -109,7 +109,7 @@ if (video) {
           </div>
         </div>
       </section>
-      <div className="video absolute bottom-0 left-0 w-full h-full">
+      <div className="video absolute inset-0">
         <video ref={videoRef} src="/videos/input.mp4" playsInline muted preload="auto" />
       </div>
     </>
