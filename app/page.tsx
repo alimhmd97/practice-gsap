@@ -1,10 +1,14 @@
+import Hero from "@/components/hero/hero";
+import Navbar from "@/components/navbar/navbar";
 import gsap from "gsap";
 import{ScrollTrigger,SplitText} from "gsap/all";
 gsap.registerPlugin(ScrollTrigger,SplitText);
 export default function Home() {
   return (
-    <div >
-     
-    </div>
+    <>
+    <Navbar />
+    <Hero />
+    <div className="bg-black h-screen"></div>
+    </>
   );
 }
