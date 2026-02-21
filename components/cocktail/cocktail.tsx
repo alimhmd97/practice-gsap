@@ -1,6 +1,27 @@
+'use client';
+import { useGSAP } from "@gsap/react";
 import { cocktailLists } from "../navbar/consts";
-
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
 export default function Cocktail() {
+    useGSAP(() => {
+     const tl=gsap.timeline({
+        scrollTrigger:{
+            trigger:'#cocktails',
+            start:'top 30%',
+            end:'bottom 80%',
+            scrub:true,
+        }
+     }).from('.cocktail-left-leaf',{
+        y:100,
+        x:-100,
+        
+     }).from('.cocktail-right-leaf',{
+        y:100,
+        x:100,
+        
+     })
+    })
   return (
     <div className="noisy" id="cocktails">
         <img src="/images/cocktail-left-leaf.png" alt="cocktail-left-leaf"
