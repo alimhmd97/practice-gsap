@@ -86,7 +86,7 @@ export default function About() {
             </div>
             <div className="md:col-span-4">
               <div className="noisy">
-                <img src="/images/abt3.png" alt="about-1" />
+                <img src="/images/abt4.png" alt="about-1" />
               </div>
             </div>
           </div>
